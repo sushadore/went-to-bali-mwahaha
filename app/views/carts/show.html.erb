@@ -2,7 +2,7 @@
 
 <% if @order_items.any? %>
   <% @order_items.each do |item| %>
-    <p><%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+    <p><%= item.product.name %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, id: "delete_item", remote: true %></p>
     <p> Unit Price: <%= number_to_currency item.product.price %> | Quantity: <%= item.quantity %> | Total Price: <%= number_to_currency (item.product.price * item.quantity) %></p>
   <% end %>
   <p>Your Total: <%= number_to_currency current_order.total_price %></p>
@@ -21,3 +21,4 @@
     <p>Total cost: <%= number_to_currency order.total_price %>
   <% end %>
 <% end %>
+Contact GitHub API Training Shop Blog About
