@@ -1,9 +1,28 @@
-# README
+# E-Commerce Fix
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
+Ruby on Rails using AJAX code review for Epicodus.
 
-To set up:
+#### Description
+Application displays products and allows admin to create new products. It authenticates users and allows shopping cart additions persisting order history to database.
 
-* `rake db:setup`
+## Requirements
+  * Ruby
+  * Rails
+  * Active Record
+  * Postgres
 
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+## Setup
+
+  * `git clone https://github.com/sushadore/went-to-bali-mwahaha`
+  * `cd went-to-bali-mwahaha`
+  * Start Postgres server
+  * `bundle install`
+  * `rake db:setup`
+  * `rails s`
+  * Open browser and navigate to http://localhost:3000/
+
+## Technologies
+Ruby on Rails, Active Record, Jquery, Postgres, HTML, CSS
+
+## Legal
+MIT License
