@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :orders
   validates_confirmation_of :password
   validates :email, presence: true, uniqueness: true
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true
 
   def previous_orders
     self.orders.where(status: 2).includes(order_items: :product)

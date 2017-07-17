@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      flash[:alert] = "Email or password did not match. Please try again."
+      flash[:alert] = "There was a problem signing in. Do you have an account? Do your email and password did not match?"
       redirect_to '/sign_in'
     end
   end
@@ -20,5 +20,4 @@ class SessionsController < ApplicationController
     flash[:notice] = "You've signed out."
     redirect_to '/sign_in'
   end
-
 end
