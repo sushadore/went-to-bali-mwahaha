@@ -23,6 +23,7 @@ Application displays products and allows admin to create new products. It authen
   1. Add flash messages for signing up, signing in and signing out.
   2. Allow other than whole dollar amounts for admin product creation.
   3. Add product validations.
+  4. Not allow negative number of order items.
 
 ## Technologies
 Ruby on Rails, Active Record, Jquery, Postgres, HTML, CSS
