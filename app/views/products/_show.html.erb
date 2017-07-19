@@ -1,7 +1,7 @@
-<h1 id="hide_details", remote:true><%= @product.name %></h1>
+<h1 id="hide_details", remote: true><%= @product.name %></h1>
 <%= image_tag(@product.image) %>
 <p><%=number_to_currency @product.price %></p>
 <p><%= @product.description %></p>
 <% if admin %>
-  <%= link_to "Delete Product", product_path(@product), :data => {:confirm => "Confirm delete!", :method => "delete", remote:true} %>
+ <%= link_to "Delete Product", product_path(@product), :data => {:confirm => "Confirm delete!", :method => "delete", remote: true} %>
 <% end %>
