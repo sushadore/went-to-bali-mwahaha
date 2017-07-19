@@ -12,14 +12,17 @@ Application displays products and allows admin to create new products. It authen
   * Postgres
 
 ## Setup
-
   * `git clone https://github.com/sushadore/went-to-bali-mwahaha`
   * `cd went-to-bali-mwahaha`
-  * Start Postgres server
-  * `bundle install`
+  * Start Postgres server in new terminal tab
   * `rake db:setup`
   * `rails s`
   * Open browser and navigate to http://localhost:3000/
+
+## Refactor Changes
+  1. Add flash messages for signing up, signing in and signing out.
+  2. Allow other than whole dollar amounts for admin product creation.
+  3. Add product validations.
 
 ## Technologies
 Ruby on Rails, Active Record, Jquery, Postgres, HTML, CSS

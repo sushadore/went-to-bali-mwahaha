@@ -17,11 +17,12 @@
         <% if current_user %>
           <li><%= current_user.email %></li>
           <li><%= link_to "Sign out", '/sign_out' %></li>
-        <% elsif admin %>
-          <li><%= link_to "Add New Product", new_product_path %></li>
         <% else %>
           <li><%= link_to "Sign up", 'sign_up' %></li>
           <li><%= link_to "Sign in", '/sign_in' %></li>
+        <% end %>
+        <% if admin %>
+          <li><%= link_to "Add New Product", new_product_path %></li>
         <% end %>
       </ul>
     </div>

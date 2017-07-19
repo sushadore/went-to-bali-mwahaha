@@ -17,6 +17,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
+    flash[:alert] = "You must be an admin to visit that page."
     redirect_to '/sign_in' unless admin
   end
 end

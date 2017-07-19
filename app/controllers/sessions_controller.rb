@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
-      flash[:alert] = "There was a problem signing in. Do you have an account? Do your email and password did not match?"
+      flash[:alert] = "There was a problem signing in. Do you have an account? Are your email and password correct?"
       redirect_to '/sign_in'
     end
   end
