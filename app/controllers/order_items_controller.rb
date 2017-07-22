@@ -6,8 +6,8 @@ class OrderItemsController < ApplicationController
     @order.save
     session[:order_id] = @order.id
     respond_to do |format|
-      format.html
-      format.js { redirect_to products_path }
+      format.html { redirect_to products_path }
+      format.js
     end
   end
 
@@ -16,10 +16,6 @@ class OrderItemsController < ApplicationController
     @item = @order.order_items.find(params[:id])
     @item.update_attributes(item_params)
     @order.save
-    respond_to do |format|
-      format.html
-      format.js { redirect_to products_path }
-    end
   end
 
   def destroy
@@ -28,8 +24,8 @@ class OrderItemsController < ApplicationController
     @item.destroy
     @order.save
     respond_to do |format|
-      format.html
-      format.js { redirect_to cart_path }
+      format.html { redirect_to cart_path }
+      format.js
     end
   end
 
