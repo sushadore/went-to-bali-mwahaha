@@ -12,7 +12,7 @@
       <%= form_for @order_item, remote: true do |f| %>
         <%= f.hidden_field :product_id, value: product.id %>
         <%= f.text_field :quantity, placeholder: "Quantity, may not be blank or negative" %>
-        <span id="add_to_cart" class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
+        <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
       <% end %>
     </div>
   <% end %>

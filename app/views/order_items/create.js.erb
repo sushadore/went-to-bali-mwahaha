@@ -1,1 +1,2 @@
-$("#cart_count").html("Cart | Total items: <%= @order.order_items.count %>")
+$("form")[0].reset();
+$("#cart_count").html('<%= j link_to "Cart | Total items: #{ cart_items }", cart_path %>')
