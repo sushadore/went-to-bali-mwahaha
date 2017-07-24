@@ -9,7 +9,7 @@ class Seed
 
   def generate_products
     20.times do |i|
-      Product.create!(name: Faker::Lorem.word, price: rand(10...100), description: Faker::Company.bs, image: Faker::LoremPixel.image)
+      Product.create!(name: Faker::Hipster.word, price: rand(10...100), description: Faker::Company.bs, image: Faker::LoremPixel.image)
     end
   end
 end

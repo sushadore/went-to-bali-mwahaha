@@ -9,6 +9,7 @@
         <p><%= product.description %></p>
         <p><%= number_to_currency product.price %></p>
         <%= render('layouts/errors', :object => @order_item) %>
+        <p>Quantity - cannot be blank or negative</p>
         <%= form_for @order_item, remote: true do |f| %>
           <%= f.hidden_field :product_id, value: product.id %>
           <%= f.text_field :quantity %>
