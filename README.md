@@ -25,6 +25,8 @@ Application displays products and allows admin to create new products. It authen
   3. Add product validations.
   4. Not allow negative number of order items.
   5. Add password complexity.
+  6. Add product update and delete functionality for admins.
+  7. Add admin crud nav.
 
 ## Technologies
 Ruby on Rails, Active Record, Jquery, Postgres, HTML, CSS
