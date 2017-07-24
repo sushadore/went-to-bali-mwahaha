@@ -21,7 +21,9 @@
           <li><%= link_to "Sign up", 'sign_up' %></li>
           <li><%= link_to "Sign in", '/sign_in' %></li>
         <% end %>
-        
+        <% if admin %>
+          <li><%= link_to "Add New Product", new_product_path %></li>
+        <% end %>
       </ul>
     </div>
   </nav>
